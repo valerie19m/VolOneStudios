@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+    .s1{
+        background-image: url("https://i.pinimg.com/1200x/86/ee/ec/86eeec0ebc0d3e3c710a0b2df6d851ff.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size: cover;
+        height:auto;
+    }
+    .a{
+        display: flex;
+        margin-top: 15px;
+        margin-right: 50px;
+    }
+    nav{
+        display:flex;
+        justify-content: space-between;
+        height:50px;
+    }
+.title{
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    margin-left: 40px;
+    word-spacing: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+
+    display: inline-block;
+    animation: title 5s ease-in-out infinite;
+}
+
+
+    .hr1{
+     height:0.5px;
+     background-color: black;
+     border:none;
+    }
+ nav div a{
+    font-family: "Raleway";
+    margin-left: 40px;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+
+nav div a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+nav div a:hover{
+    transform: translateY(-3px);
+    color: #000;
+}
+
+nav div a:hover::after{
+    width: 100%;
+}
+
+
+
+    .title2{
+    font-family: "Bebas Neue";
+    font-size: 153px;
+    color:white;
+    text-align: center;
+    margin-top: 90px;
+    letter-spacing: 5px;
+    line-height: 230px;
+    text-shadow: 20px black;
+    }
+  .line{
+    height: 25px;
+    background-color: black;
+    color: white;
+    word-spacing: 5px;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 70px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+.line p{
+    margin-right: 50px;
+    display: inline-block;
+    animation: lineMove 20s linear infinite; 
+}
+
+@keyframes lineMove{
+    0%{
+        transform: translateX(-100%); 
+    }
+    100%{
+        transform: translateX(100%); 
+    }
+}
+
+
+    .s2{
+    background-color: #E5DFD3;
+    height:800px;
+    }
+   .s2 img{
+    height: 750px;
+    object-fit: cover;
+    object-position: bottom;
+    animation: vinyl 7s linear infinite;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    height: 50vh;
+}
+    
+@keyframes vinyl{
+  0% { transform: rotate(0deg); }
+  100%   { transform: rotate(360deg); }
+}
+
+    .s2 div button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width:120px;
+    height:30px;
+    padding-bottom:5px;
+    font-family: "Raleway";
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    }
+    .s2 div button:hover{
+      border:1px solid black;
+      font-size: 16px;
+      cursor:pointer;
+    }
+    .s2 .btn{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+    }
+    .txt1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family:"Playfair Display";
+    }
+    .txt2 h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: lighter;
+    }
+    .txt2{
+    display:flex;
+    justify-content: center;
+    }
+    .s3{
+    display:flex;
+    justify-content: space-evenly;
+    height:770px;
+    background-color: #161616;
+    }
+.s3 .card{
+    height:700px;
+    margin-top: 50px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+
+.s3 .card:hover{
+    animation: cardUp 0.4s forwards;
+}
+
+
+.s3 .card:not(:hover){
+    animation: cardDown 0.4s forwards;
+}
+
+@keyframes cardUp{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes cardDown{
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes imgShadow{
+    from{
+        box-shadow: -35px -30px rgb(255, 255, 255);
+    }
+    to{
+        box-shadow: -45px -40px rgb(255, 255, 255);
+    }
+}
+
+  
+    .s3 img{
+    flex-direction: column;
+    background-color: bisque;
+    height:350px;
+    width:240px;
+    margin-left: 50px;
+    margin-top: 50px;
+    box-shadow: -35px -30px rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    }
+  
+    .s3 .card h4{
+    text-align: center;
+    margin: 20px 10px 0px 10px;
+    font-size: 18px;
+    font-family: "Raleway";
+    font-weight: 500;
+    line-height: 30px;
+    color:white;
+    }
+    .s3 .card h2{
+    text-align: center;
+    font-family:"Playfair Display";
+    margin: 20px 10px 0px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color:white;
+    }
+    .s3 button{
+    background-color: transparent;
+    border: none;
+    width:200px;
+    height:30px;
+    padding-bottom:40px;
+    font-family: "Raleway";
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-weight: 700;
+    font-size: 19px;
+    color:white;
+    }
+    .s3 button:hover{
+      border: 1px solid white;
+    }
+    .s4{
+      background-color: #161616;
+      height:850px;
+      padding-top: 30px;
+      display:flex;
+      overflow: hidden;
+    }
+    .s4 h3{
+     font-family: "Raleway";
+     font-size: 18px;
+     font-weight: bold;
+     color: white;
+    }
+    
+    .s4 .left h1{
+     font-family: "Playfair Display";
+     font-size: 30px;
+     color: white;
+     font-weight: lighter;
+    }
+     .s4 .content{
+       margin-top:20px;
+       margin-left: 50px;
+       display:flex;
+       gap:30px;
+     }
+  
+     .s4 .left hr{
+      background-color: white;
+      width:90%;
+      margin-top: 25px;
+      border:none;
+      height: 2px;
+     }
+
+     .s4 .left{
+      width:100%;
+     }
+
+    .s4 h4{
+      font-family: "Raleway";
+      font-size: 15px;
+      color: white;
+      font-weight: 500;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    .s4 .left h1:hover{
+      text-decoration: underline;
+      cursor:pointer;
+    }
+.s4 .right h1 {
+  font-family: "Bebas Neue";
+  font-size: 260px;
+  color:#E5DFD3;
+  font-weight: bold;
+  margin-top:-7px;
+  letter-spacing: 5px;
+  transform: rotate(90deg);
+  animation: floatRight 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatRight {
+  0% { transform: rotate(90deg) translateY(0px); }
+  50% { transform: rotate(90deg) translateY(-10px); }
+  100% { transform: rotate(90deg) translateY(0px); }
+}
+
+    .s4 .right{
+     width:400px;
+     margin-left:75%;
+     margin-top: 3%;
+     position:absolute;
+     margin-right: 20px;
+    }
+    
+    .s5{
+      display:flex;
+      background-color: #E5DFD3;
+      height:1000px;
+      overflow: hidden;
+    }
+.s5 .left h1 {
+  font-family: "Bebas Neue";
+  font-size: 260px;
+  color: #161616;
+  font-weight: bold;
+  letter-spacing: 5px;
+  transform: rotate(-90deg);
+  animation: floatLeft 3s ease-in-out infinite alternate;
+}
+@keyframes floatLeft {
+  0% { transform: rotate(-90deg) translateY(0px); }
+  50% { transform: rotate(-90deg) translateY(10px); }
+  100% { transform: rotate(-90deg) translateY(0px); }
+}
+
+    
+    .s5 .left{
+    margin-top: 20%;
+    margin-left: -13%;
+    position:absolute;
+    }
+
+    .s5 .img1{
+    height:500px;
+    width:300px;
+    background-color: black;
+    margin-left:-40%;
+    margin-top: 170px;
+    }
+    
+    .s5 .img2{
+      position:absolute;
+      height:300px;
+      width:200px;
+      background-color: rgb(50, 50, 50);
+      top:505%;
+      left:40%;
+      border:2px solid black;
+    }
+    .s5 img{
+      height:100%;
+    }
+    .s5 .content{
+      margin-top: 20px;
+      display:flex;
+      justify-content: space-between;
+    }
+    
+    .s5 .right hr{
+      background-color: #161616;
+      width:120%;
+      border:none;
+      height: 2px;
+      text-align: right;
+    }
+    .s5 .right button{
+      border: 2px solid #161616;
+      width:250px;
+      height:50px;
+      background-color: transparent;
+      text-align: center;
+      padding-inline: 30px;
+      margin-left: 300px;
+      margin-top: 50px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .s5 .right button:hover{
+      background-color: #161616;
+      color:white;
+      cursor: pointer;
+    }
+    .s5 .middle{
+     margin-left: 500px;
+    }
+
+    .s5 .right{
+      margin-top: 250px;
+      margin-left: 80px;
+    }
+    .s5 .right h3{
+      font-family: "Playfair Display";
+      font-size: 18px;
+      margin-right: 250px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .s5 .right h3:hover{
+     cursor:pointer;
+     font-weight: bold;
+    }
+    .s5 .right h4{
+      font-family: "Playfair Display";
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .s5 .right h4:hover{
+     cursor:pointer;
+    }
+    .s6{
+    background-color: #E5DFD3;
+    padding-top: 30px;
+    }
+    .s6 .btn{
+    display:flex;
+    margin-top:30px;
+    width:150px;
+    margin-left: 680px;
+    }
+    .s6 .btn:hover{
+      border: 1px solid #161616;
+    }
+    .s6 img{
+    height: 750px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    animation: vinyl 7s linear infinite;
+    }
+
+    .img2{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    height: 50vh;
+    }
+    .s6 div button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width:150px;
+    height:30px;
+    padding-bottom:5px;
+    font-family: "Raleway";
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    }
+
+    .s7{
+    display:flex;
+    background-color: #161616;
+    justify-content: space-evenly;
+    padding-bottom:50px;
+    padding-top: 20px; 
+   }
+    .s7 .left{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .s7 .left h2{
+      font-family: "Playfair Display";
+      font-size: 50px;
+      margin-top: 40px;
+      font-weight: lighter;
+      color:#E5DFD3;
+    }
+    .s7 .left h5{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 20px;
+      font-weight: lighter;
+      color:#E5DFD3;
+      margin-bottom: 30px;
+    }
+    .left form{
+       display:flex; 
+      border-bottom: 1px solid #E5DFD3;
+    }
+    form input{
+      background-color: transparent;
+      border:none;
+      display:flex;
+      padding-inline:3px;
+      padding-bottom: 10px;   
+      margin-top: 30px;
+      width:100%;
+      color:white;
+    }
+    button img{
+      height:30px;
+      margin-top: 25px;
+    }
+    button img:hover{
+     background-color: #3b3b3b;
+     border-radius: 3px;
+     cursor: pointer;
+    }
+    .s7 button{
+      background-color: transparent;
+      border:none;
+    }
+   .s7 .right{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+   }
+   .top .txt{
+    display:flex;
+   }
+    .s7 .right .txt h4{
+    font-family: "Raleway";
+    line-height: 35px;
+    color: #E5DFD3;
+    margin-right: 115px;
+    font-weight: 500;
+    font-size: 18px;
+   }
+   .s7 .right .txt h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+   }
+
+   .right .img{
+    display:flex;
+   }
+   .s7 .img .i{
+    height:170px;
+    width:170px;
+    background-color: bisque;
+    margin-right: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+   }
+   .s7 .img .i img{
+    height:100%;
+   }
+  .s7 .top{
+    display:flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  .s7 .bottom h5{
+   color:#E5DFD3;
+   margin-top: 20px;
+   font-family: "Raleway";
+   font-weight: 400;
+  }
+.s7 .icons img{
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.s7 .icons img:hover{
+  transform: scale(1.2);
+}
+
+  .s7 .icons{
+    margin-right: 33px;
+  }
+
+  @media only screen and (max-width:768px) {
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+    .s1{
+        height:500px;
+    }
+    .title{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    nav div a{
+    font-size: 13px;
+    margin-left: 20px;
+    }
+    .title2{
+    font-size: 100px;
+    line-height: 130px;
+    }
+
+    .line{
+    height: 20px;
+    font-size: 14px;
+    margin-top: 80px;}
+    .s2{
+        height:530px;
+    }
+    .s2 img{
+    height: 400px;
+    }
+    .img1{
+     height: 31vh;
+    }
+    .txt1{
+    font-size: 20px;
+    }
+    .txt2 h4{
+    margin-top: 10px;
+    line-height: 20px;
+    }
+
+    .s3{
+    height:550px;
+    }
+
+    .s3 img{
+    height:180px;
+    width:120px;
+    margin-left: 60px;
+    margin-top: 50px;
+    box-shadow: -25px -20px rgb(255, 255, 255);
+    }
+
+    .s3 .card h4{
+    margin-left: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    }
+    .s3 .card h2{
+    margin: 20px 0px 0px 10px;
+    font-size: 15px;
+    }
+    .s3 button{
+    width:200px;
+    height:30px;
+    padding-bottom:40px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 13px;
+    }
+
+    .s4{
+        height: 780px;
+        flex-direction: column;
+    }
+    .s4 h3{
+        font-size: 15px;
+    }
+    .s4 .left{
+     margin-top: 70px;
+    }
+    .s4 .left h1{
+     font-size: 15px;
+    }
+    .s4 h4{
+        font-size: 10px;
+    }
+    .s4 .right h1{
+     font-size: 100px;
+     transform: rotate(0deg);
+     letter-spacing: 5px;
+     margin-left: -350px;
+     margin-top: -60px;
+    }
+    .s4 .right{
+     width:400px;
+    }
+
+    .s5{
+        height: 700px;
+    }
+    .s5 .left h1{
+        font-size: 100px;
+        transform: rotate(0deg);
+    }
+    .s5 .left{
+    margin-top: 10px;
+    margin-left: 30%;
+    }
+    .s5 .img2{
+      visibility: hidden;
+      height:0px;
+      width:0px;
+    }
+    .s5 .img1{
+      visibility: hidden;
+      height:0px;
+      width:0px;
+    }
+    .s5 .content{
+     margin-left: -450px;
+    }
+    .s5 .right{
+      margin-top: 150px;
+      margin-left: 0px;
+    }
+    .s5 .right hr{
+     margin-left: -470px;
+      text-align: left;
+      width:350%;
+    }
+    .s5 .right button{
+      width:250px;
+      height:50px;
+      padding-inline: 30px;
+      margin-left: -50px;
+      margin-top: 50px;
+      font-size: 10px;
+    }
+    .s6{
+        height: 408px;
+    }
+    .s6 img{
+    height: 400px;
+    }
+    .img2{
+    height:31vh;
+    }
+    .s6 div button{
+    width:130px;
+    height:30px;
+    font-size: 13px;
+    }
+    .s6 .btn{
+    margin-left: 320px;
+    }
+
+    .s7{
+        height:380px;
+    }
+    .s7 .right .txt h4{
+    margin-right: 115px;
+    font-size: 14px;
+   }
+   .s7 .img .i{
+    height:90px;
+    width:90px;
+    margin-right: 10px;
+   }
+   .s7 .bottom h5{
+   font-size: 10px;
+  }
+  .s7 .icons img{
+   margin-bottom: 20px;
+}
+   .s7 .icons{
+    position:absolute;
+   }
+   .s7 .right .txt{
+    margin-top:50px;
+   }
+   .s7 .top .txt5{
+    margin-right: -70px;
+   }
+   .s7 .left h5{
+      font-size: 10px;
+      line-height: 20px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .s7 .left h2{
+      font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:420px){
+
+    .s1{
+        height:500px;
+    }
+    .title{
+        font-size: 22px;
+        margin-top: 8px;
+        margin-left: 80px;
+    }
+    nav{
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .s1 .hr1{
+       margin-top: -10px;
+    }
+    nav div a{
+    font-size: 12px;
+    margin-left: 10px;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:5px;
+    }
+
+    .title2{
+    font-size: 60px;
+    line-height: 130px;
+    }
+
+    .line{
+    height: 20px;
+    font-size: 12px;
+    margin-top: 92px;}
+
+    .s2{
+        height:630px;
+    }
+    .s2 img{
+    height: 400px;
+    }
+    .img1{
+     height: 31vh;
+    }
+    .txt1{
+    font-size: 20px;
+    }
+    .txt2 h4{
+    margin-top: 20px;
+    line-height: 20px;
+    margin-left: 50px;
+    font-size: 14px;
+    margin-right: 30px;
+    }
+    
+    .s3{
+    height:2000px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    }
+    .s3 .card{
+    height:700px;
+    margin-top: 50px;
+    }
+    .s3 img{
+    height:320px;
+    width:240px;
+    margin-left: 80px;
+    margin-top: 18px;
+    box-shadow: -25px -20px rgb(255, 255, 255);
+    }
+
+    .s3 .card h4{
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    }
+    .s3 .card h2{
+    margin: 20px 0px 0px 10px;
+    font-size:30px;
+    }
+    .s3 button{
+    width:200px;
+    height:30px;
+    padding-bottom:40px;
+    margin-top: 15px;
+    margin-left: 100px;
+    font-size: 20px;
+    }
+    .s4{
+        height: 2770px;
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    .s4 h3{
+        font-size: 30px;
+    }
+    .s4 .left{
+     margin-top: 70px;
+    }
+    .s4 .left h1{
+     font-size: 30px;
+    }
+    .s4 h4{
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 40px;
+    }
+    .s4 .right h1{
+     font-size: 100px;
+     transform: rotate(0deg);
+     letter-spacing: 5px;
+     position:relative;
+     padding-left: 100px;
+    }
+    .s4 .right{
+        position:relative;
+        margin-top: -2580px;
+    }
+    .s4 .content{
+      flex-direction: column;
+    }
+    .s5{
+        height: 700px;
+        flex-direction: column;
+    }
+    .s5 .left h1{
+        font-size: 100px;
+        transform: rotate(0deg);
+    }
+    .s5 .left{
+    margin-top: 10px;
+    margin-left: 8%;
+    position:relative;
+    }
+    .s5 .img2{
+      visibility: hidden;
+      height:0px;
+      width:0px;
+    }
+    .s5 .img1{
+      visibility: hidden;
+      height:0px;
+      width:0px;
+    }
+
+    .s5 .middle{
+     visibility: hidden;
+    }
+    .s5 .content{
+    margin-right: 230px;
+    justify-content: left;
+    }
+    .s5 .right{
+      margin-top: -150px;
+      margin-left: 470px;
+      width:500px;
+    }
+    .s5 .right hr{
+      width:155%;
+    }
+    .s5 .right h3{
+      margin-right: 100px;
+      width:220px;
+    }
+    .s5 .right button{
+      width:250px;
+      height:50px;
+      padding-inline: 30px;
+      margin-top: 30px;
+      font-size: 13px;
+      margin-left: -410px;
+    }
+    .s5 .right h4{
+      font-size: 30px;
+    }
+    .s6{
+        height:450px;
+    }
+    .s6 .btn{
+    margin-left:125px;
+    }
+    .s7{
+        height:755px;
+       flex-direction: column;
+        padding-top: 0px;
+    }
+    .s7 .right .txt h4{
+    margin-right:50px;
+    font-size: 15px;
+   }
+   .s7 .img .i{
+    height:70px;
+    width:70px;
+    margin-right: 10px;
+    margin-top: -10px;
+   }
+   .s7 .bottom h5{
+   font-size: 10px;
+  }
+  .s7 .icons img{
+   margin-bottom: 20px;
+   height:30px;
+}
+   .s7 .icons{
+    position:relative;
+    margin-top: 90px;
+   }
+   .s7 .right .txt{
+    margin-top:80px;
+   }
+   .s7 .top .txt5{
+    margin-right: -30px;
+   }
+   .s7 .left h5{
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .s7 .left h2{
+      font-size: 50px;
+      text-align: center;
+    }
+    .s7 .top{
+        margin-top: -40px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<div>
+
+<section class="s1">
+    <nav>
+    <div class="title"><h3>VOLUME ONE STUDIOS</h3></div>
+    <div class="a">
+    <div><a>//SERVICES</a></div>
+    <div><a>//ABOUT</a></div>
+    <div><a>//PORTOFOLIO</a></div>
+    <div><a>//CONTACT</a></div>
+    </div>
+    </nav> 
+    <div><hr class="hr1"></div>
+    <div class="title2"><h1>VOL.ONE<BR>STUDIOS</h1></div>
+        <div class="line">
+            <p>//NEW ALMBUMS OUT NOW OCTOBER 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//NEW ALMBUMS OUT NOW OCTOBER 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//NEW ALMBUMS OUT NOW OCTOBER 2024&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;//NEW ALMBUMS OUT NOW OCTOBER 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//NEW ALMBUMS OUT NOW OCTOBER 2024</p>
+        </div>
+</section>
+
+<section class="s2">
+  <div class="img1">
+  <img src="https://i.imgur.com/gTUDmmh.png">
+  </div>
+
+  <div class="text">
+    <div class="txt1">
+  <h2>Lorem, ipsum dolor<br> consectetur adipisicing elit.<br>Eveniet, earum.</h2></div>
+  <div class="txt2">
+    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus<br> dolores non et, a dolore consequatur repudiandae ut modi, reprehenderit<br> veniam laudantium? Rem hic cum molestias enim in, alias architecto aliquam <br> ex id quiaculpa praesentium repudiandae provident voluptas.</h4>
+  </div>
+  </div>
+  <div class="btn">
+    <div><button>LEARN MORE</button></div>
+  </div>
+</section>
+
+<section class="s3">
+<div class="card">
+    <img src="https://i.pinimg.com/736x/cf/7d/bb/cf7dbb366cf8868fc61a31c16ef3e7b0.jpg">
+    <h2>PRODUCE</h2>
+    <h4>Lorem ipsum dolor sit amet consect<br> adipisicing elit. Quos distinctio<br> assumenda est blanditiis eos iusto <br>maxime? Dolorum officiis dicta.</h4>
+    <button>SHOP NOW <span style="font-size: 30px;">→</span></button>
+</div>
+<div class="card">
+    <img src="https://i.pinimg.com/736x/1d/00/bb/1d00bb78f4f5050c5a4351f1f54f15b5.jpg">
+    <h2>COLLABORATE</h2>
+    <h4>Lorem ipsum dolor sit amet consect<br> adipisicing elit. Quos distinctio<br> assumenda est blanditiis eos iusto <br>maxime? Dolorum officiis dicta.</h4>
+    <button>SHOP NOW <span style="font-size: 30px;">→</span></button>
+</div>
+<div class="card">
+    <img src="https://i.pinimg.com/736x/e0/37/e3/e037e3664b7c3922418c7011dd018862.jpg">
+    <h2>RECORD</h2>
+    <h4>Lorem ipsum dolor sit amet consect<br> adipisicing elit. Quos distinctio<br> assumenda est blanditiis eos iusto <br>maxime? Dolorum officiis dicta.</h4>
+    <button>SHOP NOW <span style="font-size: 30px;">→</span></button>
+</div>
+</section>
+
+<section class="s4">
+  <div class="left">
+  <hr>
+  <div class="content">
+     <div>
+      <h3>[01]</h3>
+    </div>
+    <div>
+      <h1>PRE-PRODUCTION</h1>
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempore beatae sequi iste accusantium corporis<br> aspernatur culpa, laboriosamnobis in consectetur nisi  facere dicta tempora vel laborum quaerat sint<br> omnis nulla esse eos, neque modi. Eum neque, architecto consectetur voluptatem quos dicta<br> nobis autem sint maiores molestias! Doloremque, placeat aliquid.</h4>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+     <div>
+      <h3>[02]</h3>
+    </div>
+    <div>
+      <h1>RECORDING</h1>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, sunt modi magnam a vel nulla sit odit quaerat<br> error, saepe laboriosam optio debitis quam hic, nam pariatur tempora dignissimos dolorum sint<br> reiciendis cupiditate. Cum veniam omnis pariatur iste commodi deleniti odio veritatis quod dolor<br> obcaecati, deserunt ex impedit voluptate maxime.</h4>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+     <div>
+      <h3>[03]</h3>
+    </div>
+    <div>
+      <h1>EDITING</h1>
+      <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum labore ex tempore fuga reprehenderit harum molestias<br> sit ullam pariatur at ab, incidunt facilis debitis iusto deleniti laudantium mollitia quidem<br> soluta impedit expedita sapiente itaque minima. Eum molestias enim magnam quod quae! Obcaecati<br> beatae alias, doloremque atque libero aliquid praesentium error.</h4>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+     <div>
+      <h3>[04]</h3>
+    </div>
+    <div>
+      <h1>RELEASING & PROMOTING</h1>
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima. Numquam recusandae sint, iste optio officia<br> velit aliquid? Possimus veniam, ad autem doloremque unde assumenda odio ipsa culpa. Officia<br> rerum natus quia iste fuga, rem cumque non optio nam cum porro sunt explicabo corrupti quos<br> minus expedita molestias deleniti temporibus.</h4>
+    </div>
+  </div>
+</div>
+<div class="right">
+<h1>PROCESS</h1>
+</div>
+</section>
+
+<section class="s5">
+   <div class="left">
+    <h1>SERVICES</h1>
+  </div>
+  <div class="middle">
+    <div class="img1"><img src="https://i.pinimg.com/736x/e0/50/04/e05004965588eb16176841f1f76af140.jpg"></div>
+    <div class="img2"><img src="https://i.pinimg.com/736x/8a/dd/86/8add86e44e485c7d3f6f3e47adf30511.jpg"></div>
+  </div>
+  <div class="right">
+    <div class="content"><h3>AUDIO RECORDING</h3><h4>+</h4></div>
+    <hr>
+    <div class="content"><h3>MUSIC PRODUCTION</h3><h4>+</h4></div>
+    <hr>
+    <div class="content"><h3>LIVE SOUND ENGINEERING</h3><h4>+</h4></div>
+    <hr>
+    <div class="content"><h3>BEATS & INSTRUMENTALS</h3><h4>+</h4></div>
+    <hr>
+    <div class="content"><h3>STUDIO TRAINING</h3><h4>+</h4></div>
+    <button>EXPLORE OUR SERVICES</button> 
+    
+  </div>
+</section>
+
+<section class="s6">
+    <div class="text">
+      <div class="txt1">
+    <h2>Lorem, ipsum dolor<br> consectetur adipisicing elit.<br>Eveniet, earum.</h2></div>
+    <div class="btn">
+      <div><button>SEND AN INQUIRY</button></div>
+    </div>
+    <div class="img2">
+    <img src="https://i.imgur.com/gTUDmmh.png">
+    </div>
+  </section>
+
+  <section class="s7">
+    <div class="left">
+     <h2>Stay in the<br>Loop</h2>
+     <h5>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Repudiandae reprehenderit illum odio eos, <br> veritas possimus recusandae eius tempora esse vel.</h5>
+     <form>
+       <input type="text" id="email" name="email" placeholder="EMAIL  ADRESS">
+       <button><img src="https://i.imgur.com/E7Fb5cU.png"></button>
+     </form>
+    </div>
+    <div class="right">
+ <div class="top">
+     <div class="txt">
+      <div class="txt5">
+        <a><h4>HOME</h4></a>
+        <a><h4>ABOUT</h4></a>
+        <a><h4>GALLERIES</h4></a>
+      </div>
+      <div class="txt6">
+       <a><h4>SERVICES</h4></a>
+       <a><h4>CONTACT</h4></a>
+       <a><h4>BLOG</h4></a>
+     </div>
+   </div>
+   <div class="icons">
+     <img src="https://i.imgur.com/Fg6uSfV.png" alt="fb">
+     <img src=" https://i.imgur.com/vz0kqSP.png" alt="tw">
+     <img src="https://i.imgur.com/XJSu52a.png" alt="ig">
+     <img src="https://i.imgur.com/d6pKMUF.png" alt="yt">
+     <img src=" https://i.imgur.com/ub6FoFG.png" alt="email">
+   </div>
+</div>
+<div class="img">
+  <div class="i"><img src="https://i.pinimg.com/736x/22/99/d2/2299d2644b657c4295aa49bbcc9ae687.jpg" alt="img1"></div>
+  <div class="i"><img src="https://i.pinimg.com/736x/0d/8c/4e/0d8c4ea3036d9ad350042d8fbc5eea4a.jpg" alt="img2"></div>
+  <div class="i"><img src="https://i.pinimg.com/736x/e7/10/29/e71029042a954c5b410fcd7e08912903.jpg" alt="img3"></div>
+  <div class="i"><img src="https://i.pinimg.com/736x/52/06/d2/5206d2afbe53451e7909d39ac833f10a.jpg" alt="img4"></div>
+</div>
+
+<div class="bottom">
+  <h5>ALL RIGHTS RESERVED-PHOTOS FROM PINTEREST&nbsp;&nbsp; |&nbsp;&nbsp; SITE DESIGN BY ME</h5>
+</div>
+    </div>
+ </section>
+
+</div>
+</body>
+</html>
